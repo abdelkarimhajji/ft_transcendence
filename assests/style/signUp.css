@@ -90,6 +90,12 @@
     margin-bottom: 30px;
 }
 
+.container-switch a
+{
+    text-decoration: none;
+    color: white;
+}
+
 .container-switch .signIn
 {
     width: 45%;
@@ -134,10 +140,7 @@
     margin-bottom: 15px;
 }
 
-.container-form input:first-of-type
-{
-    margin-bottom: 10px;
-}
+
 
 .container-password
 {
@@ -189,6 +192,29 @@
     margin-bottom: 20px;
     transition: 0.5s all;
 }
+.container-form .sign-in:hover
+{
+    background-color: var(--second-color);
+}
+
+.container-email
+{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container-email i
+{
+    position: absolute;
+    left: 83px;
+    top: 14px;
+    font-weight: bold;
+    font-size: 1.2em;
+    /* color: black; */
+}
+
+.container-email 
 
 .container-form .sign-in:hover
 {
@@ -199,7 +225,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .or
@@ -258,7 +284,7 @@
 {
     width: 100%;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .container-google i
 {
@@ -296,3 +322,14 @@
 }
 
 /* finish */
+
+.container-help
+{
+    color: white;
+    margin-bottom: 50px;
+}
+.container-help span
+{
+    text-decoration: underline;
+    cursor: pointer;
+}

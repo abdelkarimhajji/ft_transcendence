@@ -120,6 +120,12 @@
     color: white;
 }
 
+.container-switch a
+{
+    text-decoration: none;
+    color: white;
+}
+
 .container-form
 {
     width: 70%;
@@ -296,3 +302,15 @@
 }
 
 /* finish */
+
+
+.container-help
+{
+    color: white;
+    margin-bottom: 50px;
+}
+.container-help span
+{
+    text-decoration: underline;
+    cursor: pointer;
+}   
