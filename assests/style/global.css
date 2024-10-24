@@ -1,0 +1,13 @@
+:root {
+    --main-color: #99185D;
+    --second-color: #66103E;
+    --intra: #161a19;
+    /* --intra: #272c2b; */
+    --font-size: 16px;
+  }
+@font-face {
+  font-family:'Exo2';
+  src: url('../Exo_2/Exo2-Italic-VariableFont_wght.ttf');
+  font-weight: 100 900; /* Range of weights */
+  font-style: normal;
+}
