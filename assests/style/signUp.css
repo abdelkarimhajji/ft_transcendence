@@ -7,7 +7,7 @@
 .container-back
 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../imgs/background.jpg");
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.499);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -49,6 +49,7 @@
     align-items: center;
     background-color: #99185d11;
     padding-top: 170px;
+    margin-bottom: 80px;
 }
 
 .container-img
@@ -207,14 +208,14 @@
 .container-email i
 {
     position: absolute;
-    left: 83px;
+    left: 70px;
     top: 14px;
     font-weight: bold;
     font-size: 1.2em;
     /* color: black; */
 }
 
-.container-email 
+
 
 .container-form .sign-in:hover
 {
@@ -290,7 +291,7 @@
 {
     position: absolute;
     top: 14.5px;
-    left: 85px;
+    left: 70px;
     color: #be1670;
     font-weight: bold;
     font-size: 1.1em;
@@ -327,9 +328,43 @@
 {
     color: white;
     margin-bottom: 50px;
+    text-align: center;
 }
 .container-help span
 {
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media(max-width: 550px)
+{
+    .container-sign-in
+    {
+        width: 90%;
+    }
+    .container-form
+    {
+        width: 90%;
+    }
+    .container-form input
+    {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .container-password
+    {
+        width: 100%;
+    }
+    .container-email i
+    {
+        display: none;
+    }
+    .container-google i
+    {
+        display: none;
+    }
+    .container-back
+    {
+        padding-top: 150px;
+    }
 }
