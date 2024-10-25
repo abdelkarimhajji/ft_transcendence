@@ -20,7 +20,8 @@ body
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    flex-direction: column;
 }
 
 .container-back::after
@@ -39,7 +40,12 @@ body
     position: relative;
     z-index: 2;
     }
-
+.conatainer-top
+{
+    width: 100px;
+    height: 200px;
+    /* background-color: red; */
+}
 .container-sign-in
 {
     position: relative;
@@ -369,10 +375,7 @@ body
     {
         display: none;
     }
-    .container-back
-    {
-        padding-top: 150px;
-    }
+
 }
 
 @media(max-width:420px)
