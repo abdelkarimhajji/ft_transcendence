@@ -15,6 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 
 .container-back::after
@@ -35,7 +36,12 @@
     position: relative;
     z-index: 2;
 }
-
+.conatainer-top
+{
+    width: 100px;
+    height: 200px;
+    /* background-color: red; */
+}
 .container-sign-in
 {
     position: relative;
@@ -329,6 +335,7 @@
     color: white;
     margin-bottom: 50px;
     text-align: center;
+    width: 90%;
 }
 .container-help span
 {
@@ -363,8 +370,8 @@
     {
         display: none;
     }
-    .container-back
+    .container-switch
     {
-        padding-top: 150px;
+        width: 88%;
     }
 }

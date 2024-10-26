@@ -375,7 +375,10 @@ body
     {
         display: none;
     }
-
+    .container-switch
+    {
+        width: 88%;
+    }
 }
 
 @media(max-width:420px)
