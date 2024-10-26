@@ -37,6 +37,6 @@ if(button_email)
 if(close_)
 {
     close_.addEventListener('click', function() {
-       poupup.style.left = "-1600px";
+       poupup.style.left = "-2500px";
     })
 }
