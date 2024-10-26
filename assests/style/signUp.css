@@ -352,12 +352,15 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.543);
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: -1600px;
     z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 
 .container-poupup .container-form
 {
@@ -463,6 +466,7 @@
     color: rgb(196, 196, 196);
     line-height: 1.5em;
 }
+
 @media(max-width: 550px)
 {
     .container-sign-in

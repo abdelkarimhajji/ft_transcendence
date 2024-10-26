@@ -30,12 +30,13 @@ let poupup = document.getElementById("container-poupup")
 if(button_email)
 {
     button_email.addEventListener('click', function(){
-        poupup.style.display = "block";
+    
+        poupup.style.left = 0;
     });
 }
 if(close_)
 {
     close_.addEventListener('click', function() {
-        poupup.style.display = "none"
+       poupup.style.left = "-1600px";
     })
 }
