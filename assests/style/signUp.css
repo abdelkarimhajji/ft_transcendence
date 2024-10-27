@@ -352,14 +352,13 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.543);
     position: fixed;
-    /* top: -2500px; */
     left: -2500px;
+    top: 0;
     z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: left 0.5s ease, background-color 2s ease;
-    /* transition: 0.5s all; */
 }
 
 
@@ -372,10 +371,9 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    
-    /* background-color: red; */
+    justify-content: center;
+    position: relative;
 }
 
 .container-poupup .container-form .container-close
@@ -388,6 +386,8 @@
     box-sizing: border-box;
     padding-right: 20px;
     padding-top: 20px;
+    position: absolute;
+    top: 0;
 }
 
 .container-poupup .container-form .container-close i
@@ -560,6 +560,33 @@
 }
 
 
+@media(max-width: 750px)
+{
+    .container-poupup .container-form
+    {
+        width: 85%;
+        height: 35rem;
+        background-color: rgba(0, 0, 0, 0.915);
+        border: 2px solid rgb(141, 141, 141);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-help
+    {
+        color: white;
+        margin-bottom: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .container-form .form .container-help p
+    {
+        width: 100%;
+        color: red;
+    }
+}
+
 @media(max-width: 550px)
 {
     .container-sign-in
@@ -590,5 +617,24 @@
     .container-switch
     {
         width: 88%;
+    }
+    .container-poupup .container-form
+    {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.915);
+        border: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-poupup .container-form .form
+    {
+        width: 90%;
+    }
+    .container-poupup .container-form .form .email input
+    {
+        width: 120%;
     }
 }
