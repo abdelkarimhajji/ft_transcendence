@@ -4,6 +4,7 @@
     margin: 0;
     font-family: 'Exo2', sans-serif;
 }
+
 .container-back
 {
     width: 100%;
@@ -210,8 +211,21 @@
     width: 100%;
     position: relative;
     margin-bottom: 30px;
+    
 }
-
+#validate-email
+{
+    margin-bottom: 10px;
+}
+#message-not-valid
+{
+    margin-bottom: 40px;
+    color: #be1670;
+    font-weight: bold;
+    letter-spacing: 0px;
+    opacity: 0;
+    transition: 250ms ease-in opacity;
+}
 .container-email i
 {
     position: absolute;
@@ -352,20 +366,22 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.543);
     position: fixed;
-    left: -2500px;
+    pointer-events: none;
+    left: 0;
     top: 0;
+    opacity: 0;
     z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: left 0.5s ease, background-color 2s ease;
+    transition: opacity 0.15s linear;
 }
 
 
 .container-poupup .container-form
 {
     width: 40rem;
-    height: 35rem;
+    height: 40rem;
     background-color: rgba(0, 0, 0, 0.915);
     border: 2px solid rgb(141, 141, 141);
     border-radius: 10px;
@@ -378,7 +394,7 @@
 
 .container-poupup .container-form .container-close
 {
-    height: 80px;
+    height: 120px;
     width: 100%;
     /* background-color: red; */
     display: flex;
