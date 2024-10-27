@@ -11,16 +11,16 @@
 </head>
 <body>
     <div class="container-back">
-        <div class="container-valid">
+        <div class="container-valid" id="container-message">
             <div class="line">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-            <div class="container-message">
+            <div class="container-message" >
                 <p>Success!</p>
                 <p>This is a success request</p>
             </div>
             <div class="container-close">
-                <i class="fa-solid fa-circle-xmark"></i>
+                <i class="fa-solid fa-circle-xmark" id="close-validate"></i>
             </div>
         </div>
         <div class="container-poupup" id="container-poupup">
@@ -33,11 +33,11 @@
                         <h1>Sign up with email</h1>
                         <p>Enter your email address to create an account.</p>
                     </div>
-                    <form class="email">
-                        <label for="">  Your email</label>
-                        <input type="text" name="" id="">
-                        <input type="button" value="Continue" class="button">
-                    </form>
+                    <div class="email">
+                        <label >  Your email</label>
+                        <input type="text" name="" id="validate-email">
+                        <input type="button" value="Continue" class="button" id="send-email">
+                    </div>
                     <div class="container-help">
                         <p>This site is protected by reCAPTCHA Enterprise and the
                             Google Privacy Policy and <span>Terms of Service</span> apply.</p>

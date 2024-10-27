@@ -18,9 +18,6 @@ if (eye) {
 }
 
 
-// confirmation password
-
-
 
 // display poupup email
 
@@ -38,5 +35,32 @@ if(close_)
 {
     close_.addEventListener('click', function() {
        poupup.style.left = "-2500px";
+    })
+}
+
+
+// display message validate
+
+let validate_message = document.getElementById("container-message");
+let validate_email = document.getElementById("validate-email");
+let send_email = document.getElementById("send-email");
+let close_validate = document.getElementById("close-validate");
+
+
+if(send_email && validate_message && send_email)
+{
+    send_email.addEventListener('click', function(){
+        if(validate_email.value != "")
+        {
+            validate_email.value = ""
+            validate_message.style.left = "60px";
+            setTimeout(function() {
+                validate_message.style.left = "-400px";
+            }, 3000);
+        }
+        
+    })
+    close_validate.addEventListener("click", function(){
+        validate_message.style.left = "-400px";
     })
 }
