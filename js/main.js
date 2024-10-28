@@ -75,8 +75,8 @@ if(send_email && validate_message && send_email)
             }
             else
             {
-                validate_message.style.left = "10px";
-                validate_message.style.bottom = "10px";
+                validate_message.style.left = "20px";
+                validate_message.style.bottom = "20px";
             }
             message_not_valid.style.opacity = "0"
             setTimeout(function() {
@@ -103,6 +103,6 @@ if(delete_)
 {
     delete_.addEventListener('click', function(){
         if(input_search.value != "")
-            input_search.value = input_search.value.slice(0, -1);
+            input_search.value = "";
     })
 }
