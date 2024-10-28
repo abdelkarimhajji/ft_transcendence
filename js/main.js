@@ -1,5 +1,5 @@
 let eye = document.getElementById('eye');
-
+let input = document.getElementById("password")
 if (eye) {
     eye.addEventListener('click', function(){
         if(eye.classList.contains('fa-eye-slash'))
@@ -80,5 +80,19 @@ if(send_email && validate_message && send_email)
 
     close_validate.addEventListener("click", function(){
         validate_message.style.left = "-400px";
+    })
+}
+
+// chat page
+
+// delete search
+
+let delete_ = document.getElementById("delete");
+let input_search = document.getElementById("input-search");
+if(delete_)
+{
+    delete_.addEventListener('click', function(){
+        if(input_search.value != "")
+            input_search.value = input_search.value.slice(0, -1);
     })
 }
