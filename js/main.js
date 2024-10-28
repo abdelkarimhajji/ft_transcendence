@@ -68,7 +68,16 @@ if(send_email && validate_message && send_email)
         if(isValidEmail(validate_email.value))
         {
             validate_email.value = "";
-            validate_message.style.left = "60px";
+            if (window.innerWidth >= 550)
+            {
+                validate_message.style.left = "40px";
+                validate_message.style.bottom = "50px";
+            }
+            else
+            {
+                validate_message.style.left = "10px";
+                validate_message.style.bottom = "10px";
+            }
             message_not_valid.style.opacity = "0"
             setTimeout(function() {
                 validate_message.style.left = "-400px";
