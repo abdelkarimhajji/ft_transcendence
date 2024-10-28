@@ -1,5 +1,6 @@
 let eye = document.getElementById('eye');
 let input = document.getElementById("password")
+
 if (eye) {
     eye.addEventListener('click', function(){
         if(eye.classList.contains('fa-eye-slash'))
