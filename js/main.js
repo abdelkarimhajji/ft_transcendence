@@ -71,7 +71,7 @@ if(send_email && validate_message && send_email)
             message_not_valid.style.opacity = "0"
             setTimeout(function() {
                 validate_message.style.left = "-400px";
-            }, 3        000);
+            }, 3000);
         }
         else
             message_not_valid.style.opacity = "1"
