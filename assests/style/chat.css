@@ -260,7 +260,7 @@ input[type="search"]::-webkit-search-cancel-button {
     content: "";
     position: absolute;
     top: 20%;         
-    height: 60%;      
+    height: 80%;      
     right: 0;        
     border-left: 2px solid rgba(192, 192, 192, 0.33); 
     border-radius: 10px;
@@ -406,22 +406,23 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .container-friends-chat .container-friend .friend
 {
-    background-color: rebeccapurple;
-    width: 80%;
+    /* background-color: rebeccapurple; */
+    width: 90%;
     height: 100px;
     border-radius: 20px;
     display: flex;
     cursor: pointer;
+    border: 1px solid rgb(146, 146, 146);
 }
 
 .container-friend .container-img-chat
 {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 90px;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .container-friend .container-img-chat .icon-active
@@ -431,7 +432,7 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 13px;
     border-radius: 50%;
     background-color: green;
-    right: 10px;
+    right: 5px;
     top: 18px;
 }
 
@@ -445,7 +446,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .container-friend .name
 {
     width: 90%;
-    background-color: red;
+    /* background-color: red; */
     overflow: hidden;
     color: white;
     box-sizing: border-box;
@@ -453,8 +454,33 @@ input[type="search"]::-webkit-search-cancel-button {
     
 }
 
+.container-friend .name .container-name-message
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 10px;
+}
 .container-friend .name p:first-child
 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.container-friend .name p:last-child
+{
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.789);
+    width: 80%;
+}
+
+.container-chat-display
+{
+    width: 50%;
+    height: 1000px;
+    /* background-color: red; */
+    /* margin-left: 30px; */
+    /* bo */
 }
