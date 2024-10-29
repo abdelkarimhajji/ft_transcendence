@@ -103,6 +103,17 @@ if(delete_)
 {
     delete_.addEventListener('click', function(){
         if(input_search.value != "")
-            input_search.value = "";
-    })
+        input_search.value = "";
+})
+}
+
+let delete_chat = document.getElementById("delete-chat");
+let input_search_chat = document.getElementById("input-search-chat");
+
+if(delete_chat)
+{
+    delete_chat.addEventListener('click', function(){
+        if(input_search_chat.value != "")
+        input_search_chat.value = "";
+})
 }

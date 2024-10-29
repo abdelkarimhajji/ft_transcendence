@@ -4,30 +4,29 @@
     padding: 0;
     font-family: 'Exo2';
 }
-.container-chat
-{
+
+.container-chat {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh; /* Full viewport height to prevent scroll issues */
     background-image: url("../imgs/background.jpg");
     backdrop-filter: blur(50px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    position: relative; /* Set relative positioning */
 }
 
-.container-chat::after
-{
+.container-chat::after {
     content: "";
-    min-height: 100vh;
+    width: 100%;
+    height: 100%; /* Match the container height */
     background-color: rgba(0, 0, 0, 0.891);
-    position: fixed;
+    position: absolute; /* Change to absolute positioning */
     inset: 0;
     z-index: 1;
     backdrop-filter: blur(5px);
 }
-
-
 
 .container-chat .container-nav-bar
 {
@@ -225,7 +224,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .container-main-chat
 {
     width: 100%;
-    min-height: 90%;
+    /* min-height: 90%; */
     display: flex;
     justify-content: center;
     box-sizing: border-box;
@@ -247,7 +246,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .container-friends
 {
-    width: 33%;
+    width: 25%;
     height: 100%;
     position: relative;
     /* background-color: red; */
@@ -268,7 +267,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 100%;
     height: 100px;
     /* border-bottom: 2px solid black; */
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -318,13 +317,50 @@ input[type="search"]::-webkit-search-cancel-button {
 .container-serach-bar-chat
 {
     width: 100%;
-    height: 100px;
-    background-color: rebeccapurple;
+    height: 60px;
     display: flex;
-    /* justify-content:start; */
-    align-items: start;
+    justify-content: center;
+    align-items: end;
 
 }
 .container-serach-bar-chat .container-search
 {
+    position: relative;
+    width: 80%;
+}
+.container-serach-bar-chat .container-search input
+{
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.445);
+    background-color: rgba(233, 233, 233, 0.11);
+    box-sizing: border-box;
+    padding-left: 45px;
+    color: white;
+    padding-right: 40px;
+}
+
+.container-serach-bar-chat .container-search .fa-magnifying-glass
+{
+    font-size: 20px;
+    position: absolute;
+    left: 14px;
+    color: var(--main-color);
+}
+
+.container-serach-bar-chat .container-search .fa-delete-left
+{
+    font-size: 20px;
+    position: absolute;
+    right: 14px;
+    color: var(--main-color);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.container-serach-bar-chat .container-search .fa-delete-left:hover
+{
+    font-size: 17px;
 }
