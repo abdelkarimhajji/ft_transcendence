@@ -748,3 +748,52 @@ input[type="search"]::-webkit-search-cancel-button {
     color: rgba(255, 255, 255, 0.792);
     cursor: pointer;
 }
+
+.container-profile-left
+{
+    width: 25%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-container-profile-left
+{
+    width: 95%;
+    height: 96%;
+    /* background-color: red; */
+    border: 2px solid rgba(207, 207, 207, 0.381);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.child-container-profile-left .container-background-profile
+{
+    width: 95%;
+    height: 150px;  
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.child-container-profile-left .container-background-profile img:first-child
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.child-container-profile-left .container-background-profile img:last-child
+{
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+}
