@@ -7,7 +7,8 @@
 
 .container-chat {
     width: 100%;
-    min-height: 100vh; 
+    min-height: 100vh;
+    /* height: auto; */
     background-image: url("../imgs/background.jpg");
     backdrop-filter: blur(50px);
     background-position: center;
@@ -228,11 +229,13 @@ input[type="search"]::-webkit-search-cancel-button {
 .container-main-chat
 {
     width: 100%;
-    /* min-height: 90%; */
+    /* background-color: red; */
+    min-height: auto;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
     padding-top: 50px;
+    margin-bottom: 100px;
     /* align-items: center; */
 }
 
@@ -330,12 +333,12 @@ input[type="search"]::-webkit-search-cancel-button {
 .container-serach-bar-chat .container-sear
 {
     position: relative;
-    width: 80%;
+    width: 90%;
 }
 .container-serach-bar-chat .container-sear input
 {
     width: 100%;
-    height: 44px;
+    height: 50px;
     border-radius: 10px;
     outline: none;
     border: 2px solid rgba(255, 255, 255, 0.445);
@@ -351,7 +354,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 20px;
     position: absolute;
     left: 14px;
-    top: 12px;
+    top: 15px;
     color: var(--main-color);
 }
 
@@ -360,7 +363,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 20px;
     position: absolute;
     right: 14px;
-    top: 12px;
+    top: 15px;
     color: var(--main-color);
     transition: 0.5s all;
     cursor: pointer;
@@ -479,8 +482,213 @@ input[type="search"]::-webkit-search-cancel-button {
 .container-chat-display
 {
     width: 50%;
-    height: 1000px;
+    height: 100%    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-chat-display .chat-display
+{
+    width: 95%;
+    height: 95%;
+    border: 2px solid rgba(207, 207, 207, 0.381);
+    /* backdrop-filter: blur(1px); */
+    background-color: #99185d1f;
     /* background-color: red; */
-    /* margin-left: 30px; */
-    /* bo */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    flex-direction: column;
+    /* back */
+}
+
+.container-chat-display .container-chat-user 
+{
+    width: 97%;
+    height: 80px;
+    /* background-color: red; */
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(207, 207, 207, 0.381);
+    display: flex;
+}
+
+.container-chat-display .container-chat-user .container-chat-user-img
+{
+    width: 80px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-chat-display .container-chat-user .container-chat-user-img img
+{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.container-chat-display .container-chat-user .container-chat-uer-name
+{
+    width: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-chat-display .container-chat-user .container-chat-uer-name p:first-child
+{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.container-chat-display .container-chat-user .container-chat-uer-name p:last-child
+{
+    color: white;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.789);
+}
+
+.container-chat-display .chat-display .container-chat-messages
+{
+    /* background-color: yellow; */
+    width: 97%;
+    height: 100%;
+    /* border-radius: 20px; */
+    padding-top: 0px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.container-chat-messages::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+.container-chat-display .chat-display .container-date
+{
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.container-chat-display .chat-display .container-date p
+{
+    position: relative;
+    color: rgb(239, 239, 239);
+}
+
+.container-chat-display .chat-display .container-date p::after
+{
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(212, 212, 212, 0.761);
+    top: 10px;
+    left: 120px;
+    width: 100px;
+}
+
+
+.container-chat-display .chat-display .container-date p::before
+{
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(212, 212, 212, 0.761);
+    top: 10px;
+    left: -120px;
+    width: 100px;
+}
+
+
+.container-chat-display .container-message-user
+{
+    width: 100%;
+    min-height: 50px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.container-chat-display .container-message-user .time
+{
+    color: rgba(255, 255, 255, 0.803);
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.container-chat-display .container-message-user .child-container-message-user
+{
+    width: 45%;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.container-chat-display .container-message-user .child-container-message-user p
+{
+    color: rgba(255, 255, 255, 0.787);
+    font-size: 0.9em;
+}
+
+
+.container-chat-display .container-message-clinet
+{
+    width: 100%;
+    min-height: 50px;
+    /* background-color: olive; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 7px;
+}
+
+
+.container-chat-display .container-message-clinet .child-container-message-client
+{
+    width: 45%;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container-chat-display .container-message-clinet .child-container-message-client p
+{
+    color: rgba(255, 255, 255, 0.803);
+    font-size: 0.9em;
+}
+
+.container-chat-display  .container-message-clinet .time
+{
+    color: rgba(255, 255, 255, 0.803);
+    font-size: 0.8em;
+    margin-right: 7px;
 }
