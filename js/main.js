@@ -1,3 +1,6 @@
+
+export function update_icon_view() {
+
 let eye = document.getElementById('eye');
 let input = document.getElementById("password")
 
@@ -18,7 +21,7 @@ if (eye) {
     })
 }
 
-
+}
 
 // display poupup email
 
