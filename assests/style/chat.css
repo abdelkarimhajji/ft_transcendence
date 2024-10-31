@@ -921,10 +921,18 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.691);
     display: flex;
-    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     padding-top: 15px;
+    flex-direction: column;
+    overflow-y: scroll;
 }
+.child-container-profile-left .container-chalange::-webkit-scrollbar {
+
+    width: 0px;
+    /* color: white; */
+}
+
 
 .child-container-profile-left .container-chalange .child-container-chalange
 {
@@ -934,6 +942,9 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     border: 1px solid rgba(255, 255, 255, 0.691);
     border-radius: 10px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .child-container-chalange .contaienr-chalange-img-left
@@ -979,11 +990,11 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 0.1em;
     font-weight: 300;
     width: 60px;
-    height: 12px;
+    height: 14px;
     position: absolute;
-    bottom: 0px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    bottom: -5px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
     border: solid rgba(255, 255, 255, 0.691);
     border-width: 1px 1px 0 1px;
     display: flex;
