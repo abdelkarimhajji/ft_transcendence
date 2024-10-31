@@ -152,6 +152,16 @@ input[type="search"]::-webkit-search-cancel-button {
     justify-content: center;
     align-items:end;
 
+
+}
+
+@media(max-width: 1987px)
+{
+    .container-top .container-profile   
+    {
+        width: 38%;
+        
+    }
 }
 
 .container-top .container-profile .profile
@@ -178,9 +188,13 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-left: 20px;
     padding-top: 5px;
     height: 100%;
-    width: 70%;
- 
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+
+
 
 .container-top .container-profile .profile .container-notification p:first-of-type
 {
@@ -195,7 +209,12 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .container-top .container-profile .profile .icon-down
 {
-    width: 10%;
+    width: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    padding-right: 10px;
 }
 
 .container-top .container-profile .profile .icon-down .container-icon:hover
@@ -753,9 +772,16 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .container-chat .containe-send-message .child-container-message .container-send-icon i
 {
-    font-size: 40px;
+    font-size: 35px;
     color: rgba(255, 255, 255, 0.792);
     cursor: pointer;
+    transition: 0.5s all;
+}
+
+.container-chat .containe-send-message .child-container-message .container-send-icon i:hover
+{
+    font-size: 30px;
+    color: rgba(186, 186, 186, 0.772);
 }
 
 .container-profile-left
