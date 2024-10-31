@@ -883,6 +883,7 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.691);
     color: rgba(255, 255, 255, 0.857);
+    margin-bottom: 20px;
    
 }
 
@@ -912,3 +913,106 @@ input[type="search"]::-webkit-search-cancel-button {
     justify-content: center;
     cursor: pointer;
 }
+
+.child-container-profile-left .container-chalange
+{
+    width: 90%;
+    height: 47%;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.691);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.child-container-profile-left .container-chalange .child-container-chalange
+{
+    width: 93%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.691);
+    border-radius: 10px;
+}
+
+.child-container-chalange .contaienr-chalange-img-left
+{
+    width: 40%;
+    height: 100%;
+    /* background-color: #272729; */
+    
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.child-container-chalange .contaienr-chalange-img-left img
+{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.child-container-chalange .contaienr-chalange-img-left p
+{
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.child-container-chalange .container-VS
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.795);
+    font-weight: bold;
+    position: relative;
+}
+
+.child-container-chalange .container-VS::after
+{
+    content: "ping pong";
+    font-size: 0.1em;
+    font-weight: 300;
+    width: 60px;
+    height: 12px;
+    position: absolute;
+    bottom: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: solid rgba(255, 255, 255, 0.691);
+    border-width: 1px 1px 0 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-container-chalange .contaienr-chalange-img-right
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.child-container-chalange .contaienr-chalange-img-right p
+{
+    color: white;
+    font-weight: bold;
+    margin-right:   10px;
+    
+}
+
+.child-container-chalange .contaienr-chalange-img-right img
+{
+    width: 40px;
+    border-radius: 50%;
+}
+
