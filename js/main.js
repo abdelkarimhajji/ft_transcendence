@@ -25,28 +25,30 @@ if (eye) {
 
 // display poupup email
 
-let button_email = document.getElementById("email");
-let close_ = document.getElementById("close");
-let poupup = document.getElementById("container-poupup");
-let form = document.querySelector(".container-poupup > .container-form");
-if(button_email)
+export function display_poupup()
 {
-    button_email.addEventListener('click', function(){    
-        poupup.style.opacity = "1";
-        poupup.style.pointerEvents = "all";
-    });
+    let button_email = document.getElementById("email");
+    let close_ = document.getElementById("close");
+    let poupup = document.getElementById("container-poupup");
+    console.log(button_email, close_, poupup)
+    if(button_email)
+    {
+       
+        button_email.addEventListener('click', function(){    
+            poupup.style.opacity = "1";
+            poupup.style.pointerEvents = "all";
+        });
+    }
+    if(close_)
+    {
+        close_.addEventListener('click', function() {
+            poupup.style.pointerEvents = "none";
+            poupup.style.opacity = "0";
+            validate_message.style.left = "-400px";
+            validate_email.value = "";
+        })
+    }
 }
-if(close_)
-{
-    close_.addEventListener('click', function() {
-        poupup.style.pointerEvents = "none";
-        poupup.style.opacity = "0";
-        validate_message.style.left = "-400px";
-        validate_email.value = "";
-    })
-}
-
-
 // display message validate
 
 

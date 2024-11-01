@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assests/style/signUp.css">
-    <link rel="stylesheet" href="assests/style/global.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-</head>
-<body>
+export function signUp() {
+    return `
     <div class="container-back">
         <div class="container-valid" id="container-message">
             <div class="line">
@@ -54,8 +45,8 @@
                 <p>Ping Pong Game</p>
             </div>
             <div class="container-switch">
-                <div class="signIn" onclick=""><a href="signIn.html">Sign in</a></div>
-                <div class="signUp"><a href="#">Sign up</a></div>
+                <div class="signIn" onclick="change_page('signIn')">Sign in</div>
+                <div class="signUp">Sign up</div>
             </div>
             <p style="color: white; margin-bottom: 50px; font-weight: bold; font-size: 1.3em;">Choose One way</p>
             <div class="container-form">
@@ -76,6 +67,5 @@
             </div>
         </div>
     </div>
-    <script src="js/main.js"></script>
-</body>
-</html>
+    `;
+}
