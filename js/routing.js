@@ -4,14 +4,12 @@ import {signIn} from './signIn.js';
 import {signUp} from './signUp.js';
 
 
-console.log("karim and hamza")
+
 function updateCSS(href) {
     const link_css = document.getElementById('link-css');
     link_css.href = href;
 }
 
-root.innerHTML = signIn();
-history.replaceState({ page: "signIn" }, "Sign In", "/signIn");
 export function change_page(param)
 {
     if(param === "signUp")
@@ -19,13 +17,14 @@ export function change_page(param)
         root.innerHTML = signUp();
         updateCSS("assests/style/signUp.css")
         history.pushState({ page: "signUp" }, "Sign Up", "/signUp");
+        display_poupup();
     }
     else if(param === "signIn")
     {
         root.innerHTML = signIn();
         updateCSS("assests/style/signIn.css")
         history.pushState({ page: "signIn" }, "Sign In", "/signIn");
-        
+        update_icon_view();
     }
 }
 
@@ -34,14 +33,47 @@ window.addEventListener('popstate', function(event) {
         if (event.state.page === "signUp") {
             root.innerHTML = signUp();
             updateCSS("assests/style/signUp.css");
+            display_poupup();
         } else if (event.state.page === "signIn") {
             root.innerHTML = signIn();
             updateCSS("assests/style/signIn.css");
+            update_icon_view();
         }
     }
 });
 
+
+
+
+window.addEventListener('load', () => {
+    const path = window.location.pathname;
+
+    if (path === '/' || path === '/signIn') {
+        root.innerHTML = signIn();
+        updateCSS("assests/style/signIn.css")
+        history.pushState({ page: "signIn" }, "Sign In", "/signIn");
+        update_icon_view();
+    } else if (path === '/signUp') {
+        root.innerHTML = signUp();
+        updateCSS("assests/style/signUp.css")
+        history.pushState({ page: "signUp" }, "Sign Up", "/signUp");
+        display_poupup();
+    } else {
+        loadHomePage();
+    }
+});
+
+// if (!history.state) {
+//     root.innerHTML = signIn();
+//     updateCSS("assets/style/signIn.css");
+//     history.replaceState({ page: "signIn" }, "Sign In", "/signIn");
+//     update_icon_view();
+// }
+
+
+
+
 window.change_page = change_page;
 
-update_icon_view();
+// update_icon_view();
 display_poupup();

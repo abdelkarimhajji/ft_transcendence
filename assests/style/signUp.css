@@ -374,7 +374,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.15s linear;
+    /* transition: opacity 0.15s linear; */
 }
 
 
@@ -411,7 +411,6 @@
     font-size: 25px;
     cursor: pointer;
     height: 0px;
-    transition: 0.5s all;
 }
 
 .container-poupup .container-form .container-close i:hover
