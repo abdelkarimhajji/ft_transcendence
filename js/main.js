@@ -27,10 +27,12 @@ if (eye) {
 
 export function display_poupup()
 {
+    let validate_email = document.getElementById("validate-email");
+    let validate_message = document.getElementById("container-message");
     let button_email = document.getElementById("email");
     let close_ = document.getElementById("close");
     let poupup = document.getElementById("container-poupup");
-    console.log(button_email, close_, poupup)
+    
     if(button_email)
     {
        
@@ -54,49 +56,54 @@ export function display_poupup()
 
 
 
-let validate_message = document.getElementById("container-message");
-let validate_email = document.getElementById("validate-email");
-let send_email = document.getElementById("send-email");
-let close_validate = document.getElementById("close-validate");
-let message_not_valid = document.getElementById("message-not-valid");
 
 
-function isValidEmail(email) {
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailPattern.test(email);
-}
 
- 
-if(send_email && validate_message && send_email)
-{
-    send_email.addEventListener('click', function(){
-        if(isValidEmail(validate_email.value))
-        {
-            validate_email.value = "";
-            if (window.innerWidth >= 550)
+export function display_validate() {
+    let validate_message = document.getElementById("container-message");
+    let validate_email = document.getElementById("validate-email");
+    let send_email = document.getElementById("send-email");
+    let close_validate = document.getElementById("close-validate");
+    let message_not_valid = document.getElementById("message-not-valid");
+    function isValidEmail(email) {
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailPattern.test(email);
+    }
+    
+     
+    if(send_email && validate_message && send_email)
+    {
+        send_email.addEventListener('click', function(){
+            if(isValidEmail(validate_email.value))
             {
-                validate_message.style.left = "40px";
-                validate_message.style.bottom = "50px";
+                validate_email.value = "";
+                if (window.innerWidth >= 550)
+                {
+                    validate_message.style.left = "40px";
+                    validate_message.style.bottom = "50px";
+                }
+                else
+                {
+                    validate_message.style.left = "20px";
+                    validate_message.style.bottom = "20px";
+                }
+                message_not_valid.style.opacity = "0"
+                setTimeout(function() {
+                    validate_message.style.left = "-400px";
+                }, 3000);
             }
             else
-            {
-                validate_message.style.left = "20px";
-                validate_message.style.bottom = "20px";
-            }
-            message_not_valid.style.opacity = "0"
-            setTimeout(function() {
-                validate_message.style.left = "-400px";
-            }, 3000);
-        }
-        else
-            message_not_valid.style.opacity = "1"
-        
-    })
-
-    close_validate.addEventListener("click", function(){
-        validate_message.style.left = "-400px";
-    })
+                message_not_valid.style.opacity = "1"
+            
+        })
+    
+        close_validate.addEventListener("click", function(){
+            validate_message.style.left = "-400px";
+        })
+    }
 }
+
+
 
 // chat page
 

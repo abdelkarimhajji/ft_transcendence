@@ -1,4 +1,4 @@
-import {update_icon_view, display_poupup} from "./main.js"
+import {update_icon_view, display_poupup, display_validate} from "./main.js"
 import { root } from './app.js';
 import {signIn} from './signIn.js';
 import {signUp} from './signUp.js';
@@ -18,6 +18,7 @@ export function change_page(param)
         updateCSS("assests/style/signUp.css")
         history.pushState({ page: "signUp" }, "Sign Up", "/signUp");
         display_poupup();
+        display_validate();
     }
     else if(param === "signIn")
     {
@@ -34,6 +35,7 @@ window.addEventListener('popstate', function(event) {
             root.innerHTML = signUp();
             updateCSS("assests/style/signUp.css");
             display_poupup();
+            display_validate();
         } else if (event.state.page === "signIn") {
             root.innerHTML = signIn();
             updateCSS("assests/style/signIn.css");
@@ -58,22 +60,14 @@ window.addEventListener('load', () => {
         updateCSS("assests/style/signUp.css")
         history.pushState({ page: "signUp" }, "Sign Up", "/signUp");
         display_poupup();
+        display_validate();
     } else {
         loadHomePage();
     }
 });
-
-// if (!history.state) {
-//     root.innerHTML = signIn();
-//     updateCSS("assets/style/signIn.css");
-//     history.replaceState({ page: "signIn" }, "Sign In", "/signIn");
-//     update_icon_view();
-// }
 
 
 
 
 window.change_page = change_page;
 
-// update_icon_view();
-display_poupup();
