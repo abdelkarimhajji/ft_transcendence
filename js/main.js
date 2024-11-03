@@ -109,23 +109,28 @@ export function display_validate() {
 
 // delete search
 
-let delete_ = document.getElementById("delete");
-let input_search = document.getElementById("input-search");
-if(delete_)
+export function delete_search()
 {
-    delete_.addEventListener('click', function(){
-        if(input_search.value != "")
-        input_search.value = "";
-})
+    console.log("push");
+    let delete_ = document.getElementById("delete");
+    let input_search = document.getElementById("input-search");
+    if(delete_)
+    {
+        delete_.addEventListener('click', function(){
+            if(input_search.value != "")
+            input_search.value = "";
+    })
+    }
+
+    let delete_chat = document.getElementById("delete-chat");
+    let input_search_chat = document.getElementById("input-search-chat");
+
+    if(delete_chat)
+    {
+        delete_chat.addEventListener('click', function(){
+            if(input_search_chat.value != "")
+            input_search_chat.value = "";
+        })
+    }
 }
 
-let delete_chat = document.getElementById("delete-chat");
-let input_search_chat = document.getElementById("input-search-chat");
-
-if(delete_chat)
-{
-    delete_chat.addEventListener('click', function(){
-        if(input_search_chat.value != "")
-        input_search_chat.value = "";
-})
-}

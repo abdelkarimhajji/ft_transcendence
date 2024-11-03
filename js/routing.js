@@ -1,7 +1,8 @@
-import {update_icon_view, display_poupup, display_validate} from "./main.js"
+import {update_icon_view, display_poupup, display_validate, delete_search} from "./main.js"
 import { root } from './app.js';
 import {signIn} from './signIn.js';
 import {signUp} from './signUp.js';
+import {chat} from './chat.js';
 
 
 
@@ -41,6 +42,11 @@ window.addEventListener('popstate', function(event) {
             updateCSS("assests/style/signIn.css");
             update_icon_view();
         }
+        else if (event.state.page === "chat") {
+            root.innerHTML = signIn();
+            updateCSS("assests/style/chat.css");
+            delete_search();
+        }
     }
 });
 
@@ -49,7 +55,6 @@ window.addEventListener('popstate', function(event) {
 
 window.addEventListener('load', () => {
     const path = window.location.pathname;
-
     if (path === '/' || path === '/signIn') {
         root.innerHTML = signIn();
         updateCSS("assests/style/signIn.css")
@@ -61,8 +66,14 @@ window.addEventListener('load', () => {
         history.pushState({ page: "signUp" }, "Sign Up", "/signUp");
         display_poupup();
         display_validate();
-    } else {
-        loadHomePage();
+    } else if (path === '/chat') {
+        root.innerHTML = chat();
+        updateCSS("assests/style/chat.css")
+        history.pushState({ page: "chat" }, "chat", "/chat");
+        delete_search();
+    }else {
+        alert()
+        root.innerHTML = "home page ok";
     }
 });
 
