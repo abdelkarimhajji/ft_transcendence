@@ -29,25 +29,71 @@
     backdrop-filter: blur(5px);
 }
 
-.container-chat .container-nav-bar
+.block-container-nav-bar
 {
-
+    width: 80px;
     z-index: 2;
     min-height: 100%;
-    width: 80px;
-   
 }
 
-.container-chat .container-nav-bar::after
+.container-nav-bar
 {
-    content: "";
-    min-height: 100%;
-    position: fixed;
-    inset: 0;
-    min-height: 100%;
-    background-color: black;
+    z-index: 9;
+    height: 100vh;
     width: 80px;
+    background-color: rebeccapurple;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
+
+
+.container-nav-bar .container-icon-menu
+{
+    height: 20%;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+    background-color: black;
+}
+.container-nav-bar .container-icon-menu i
+{
+    font-size: 45px;
+    color: white;
+}
+
+.container-nav-bar .container-menu
+{
+    height: 60%;
+    width: 80px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-nav-bar .container-settings
+{
+    height: 20%;
+    width: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+
+.container-nav-bar .container-settings i
+{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    cursor: pointer;
+}
+
 
 .container-chat .container-main
 {
@@ -961,6 +1007,7 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-top: 15px;
     flex-direction: column;
     overflow-y: scroll;
+    margin-bottom: 25px;
 }
 .child-container-profile-left .container-chalange::-webkit-scrollbar {
 
