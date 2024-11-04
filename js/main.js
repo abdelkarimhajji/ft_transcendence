@@ -48,6 +48,7 @@ export function display_poupup()
             poupup.style.opacity = "0";
             validate_message.style.left = "-400px";
             validate_email.value = "";
+            
         })
     }
 }
@@ -88,12 +89,16 @@ export function display_validate() {
                     validate_message.style.bottom = "20px";
                 }
                 message_not_valid.style.opacity = "0"
+                message_not_valid.style.zIndex = "0"
                 setTimeout(function() {
                     validate_message.style.left = "-400px";
                 }, 3000);
             }
             else
+            {
                 message_not_valid.style.opacity = "1"
+                
+            }
             
         })
     

@@ -2,10 +2,22 @@
 
 export function chat()
 {
-    return `<div class="container-chat">
-    <div class="container-nav-bar">
+    return `<div class="container-nav-bar">
+    <div class="container-icon-menu"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
+    <div class="container-menu">
+        <div class="container-fa-house"><i class="fa-solid fa-house"></i></div>
+        <div class="container-fa-winer"><i class="fa-solid fa-trophy"></i></div>
+        <div class="container-fa-game"><i class="fa-solid fa-puzzle-piece"></i></div>
+        <div class="container-fa-comment"><i class="fa-solid fa-comment-dots"></i></div>
+    </div>
+    <div class="container-settings"><i class="fa-solid fa-gear"></i></div>
+</div>
+<div class="container-chat">
+    <div class="block-container-nav-bar">
 
     </div>
+   
+    <!-- main -->
     <div class="container-main">
         <div class="container-top">
             <div class="container-title">
@@ -138,9 +150,6 @@ export function chat()
                                     <div class="container-name-message">
                                         <p>Abdelkarim hajji</p>
                                         <p>here will be display a message for the user so that what will happen ok</p>
-                                    </div>
-                                    <div class>
-
                                     </div>
                                 </div>
                             </div>
@@ -389,7 +398,7 @@ export function chat()
             </div>
         </div>
     </div>
-    <p>karim hu</p>
+
 </div>
     `
 }
