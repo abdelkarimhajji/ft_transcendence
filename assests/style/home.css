@@ -674,6 +674,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
 }
 
+
 .container-main-home .child-container-main-home .main-home-right .container-home-profile .child-container-home-profile .home-profile .home-profile-left::after
 {
     content: "";
@@ -699,17 +700,28 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 50%;
 }
 
+@media(max-width:1855px)
+{
+    .container-main-home .child-container-main-home .main-home-right .container-home-profile .child-container-home-profile .home-profile .home-profile-left .profile img
+    {
+        width: 50px;
+    }
+}
+
 .container-main-home .child-container-main-home .main-home-right .container-home-profile .child-container-home-profile .home-profile .home-profile-left .name
 {
     width: 50%;
     height: 100%;
-    /* background-color: red; */
+    /* background-color: white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .container-main-home .child-container-main-home .main-home-right .container-home-profile .child-container-home-profile .home-profile .home-profile-left .name i
 {
