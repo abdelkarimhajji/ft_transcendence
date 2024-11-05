@@ -8,6 +8,7 @@
 .container-chat {
     width: 100%;
     min-height: 100vh;
+    max-width: 2600px;
     /* height: auto; */
     background-image: url("../imgs/background.jpg");
     backdrop-filter: blur(50px);
@@ -92,11 +93,11 @@
     /* color: var(--main-color); */
 }
 
-.container-nav-bar .container-menu .container-fa-comment
+.container-nav-bar .container-menu .container-fa-house
 {
     position: relative;
 }
-.container-nav-bar .container-menu .container-fa-comment::after
+.container-nav-bar .container-menu .container-fa-house::after
 {
     content: "";
     position: absolute;
@@ -394,6 +395,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .container-main-home .child-container-main-home .main-home-left .main-home-left-top .play i
 {
@@ -427,19 +429,173 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games
 {
-    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games .first-game
+{
+    width:25%;
+    height: 65%;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s all;
+    background-image: url("../imgs/background.jpg");
+    object-fit:contain;
+    display: flex;
+    align-items: end;
+}
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games .title
+{
+    /* background-color: red; */
+    width: 100%;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games .title h1
+{
+    font-size: 1.5em;
+}
+.container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games .title p
+{
+    font-size: 0.7em;
+    margin-bottom: 40px;
+}
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games .title .button
+{
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games .second-game
+{
+    width:30%;
+    height: 80%;
+    background-image: url("../imgs/background.jpg");
+    object-fit:contain;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s all;
+    display: flex;
+    align-items: end;
+}
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games .third-game
+{
+    width:25%;
+    height: 65%;
+    background-image: url("../imgs/background.jpg");
+    object-fit:contain;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s all;
+    display: flex;
+    align-items: end;
 }
 
 .container-main-home .child-container-main-home .main-home-left .main-home-left-end
 {
     width: 80%;
-    height: 40%;
-    background-color: brown;
+    height: 41%;
+    border-radius: 15px;
+    /* border: 1px solid rgb(180, 180, 180); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-end .title
+{
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table
+{
+    box-sizing: border-box;
+    width: 95%;
+    height: 85%;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 20px;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table .container-table-left
+{
+    width: 50%;
+    height: 100%;
+}
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table .container-table-left .ul
+{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+.container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table .container-table-left .ul .li
+{
+    width: 24%;
+    color: white;
+}
+
+
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table .container-table-content .ul
+{
+    background-color: var(--main-color);
+    background: linear-gradient(to right,black, var(--second-color), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 45px;
+    padding-left: 10px;
+    /* padding-right: 10px; */
+    color: white;
+    width: 90%;
+    border-radius: 15px;
+    
+    /* width: %; */
+}
+.container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table .container-table-content .ul .li
+{
+    width: 24%;
+    text-align: center;
+}
+
+.container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table .container-table-right
+{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
 }
 
 .container-main-home .child-container-main-home .main-home-right
 {
     width: 30%;
     height: 100%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
+
