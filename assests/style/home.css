@@ -619,9 +619,10 @@ input[type="search"]::-webkit-search-cancel-button {
     box-sizing: border-box;
     padding-top: 20px;
 }
+
 .container-main-home .child-container-main-home .main-home-right .container-home-profile
 {
-    width: 80%;
+    width: 95%;
     height: 300px;
     /* background-color: red; */
     border-radius: 20px;
@@ -630,6 +631,7 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-top: 20px;
     margin-bottom: 35px;
 }
+
 .container-main-home .child-container-main-home .main-home-right .container-home-profile .title
 {
     width: 100%;
@@ -638,9 +640,10 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 1.5em;
     font-weight: bold;
 }
+
 .container-main-home .child-container-main-home .main-home-right .activity
 {
-    width: 80%;
+    width: 95%;
     height: 67%;
 }
 
