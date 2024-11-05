@@ -752,13 +752,19 @@ input[type="search"]::-webkit-search-cancel-button {
 {
     width: 33.33%;
     height: 100%;
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
+.container-main-home .child-container-main-home .main-home-right .container-home-profile .child-container-home-profile .under-home-profile .part div:first-of-type
+{
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
 .container-main-home .child-container-main-home .main-home-right .activity
 {
     width: 100%;
@@ -778,7 +784,90 @@ input[type="search"]::-webkit-search-cancel-button {
 .container-main-home .child-container-main-home .main-home-right .activity .container-activity
 {
     width: 100%;
-    height: 69%;
+    height: 86%;
     border: 2px solid rgba(178, 178, 178, 0.761);
     border-radius: 20px;
+}
+
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity .container-first-part
+{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity .container-first-part .container-swich
+{
+    display: flex;
+    width: 200px;
+    margin-top: 25px;
+    margin-right: 25px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+}
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity .container-first-part .container-swich div:first-of-type
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity .container-first-part .container-swich div:first-of-type::after
+{
+    content: "";
+    position: absolute;
+    height: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.662);
+    right: 0;
+}
+
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity .container-first-part .container-swich div:last-of-type
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+}
+
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity .container-users
+{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: scroll;
+}
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity .container-user
+{
+    width: 85%;
+    height: 60px;
+    margin: 0 auto;
+    border: 2px solid rgba(150, 150, 150, 0.741);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+    background-color: #99185d25;
+}
+
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity .container-user img
+{
+    width: 40px;
+    border-radius: 50%;
+}
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity .container-user p
+{
+    color: white;
+    margin-left: 20px;
 }
