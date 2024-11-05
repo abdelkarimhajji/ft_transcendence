@@ -539,6 +539,7 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-left: 15px;
     padding-right: 30px;
     padding-top: 20px;
+    overflow: hidden;
 }
 .container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table .container-table-left
 {
@@ -560,8 +561,16 @@ input[type="search"]::-webkit-search-cancel-button {
     color: white;
 }
 
+.container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table .container-table-content
+{
+    overflow-y: scroll;
+    height: 80%;
+}
+::-webkit-scrollbar {
 
-
+    width: 0px;
+    /* color: white; */
+}
 .container-main-home .child-container-main-home .main-home-left .main-home-left-end .container-table .container-table-content .ul
 {
     background-color: var(--main-color);
