@@ -736,6 +736,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 100%;
     height: 50%;
     position: relative;
+    display: flex;
 }
 .container-main-home .child-container-main-home .main-home-right .container-home-profile .child-container-home-profile .under-home-profile::before
 {
@@ -747,6 +748,16 @@ input[type="search"]::-webkit-search-cancel-button {
     border: 1px solid rgba(178, 178, 178, 0.761);
 }
 
+.container-main-home .child-container-main-home .main-home-right .container-home-profile .child-container-home-profile .under-home-profile .part
+{
+    width: 33.33%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .container-main-home .child-container-main-home .main-home-right .activity
 {
