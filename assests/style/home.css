@@ -324,6 +324,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .container-main-home
 {
     /* background-color: red; */
+   
     width: 100%;
     height: 89vh;
     display: flex;
@@ -334,6 +335,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .container-main-home .child-container-main-home
 {
+    background-color: #99185d23;
     width: 95%;
     height: 90%;
     border-radius: 20px;
@@ -387,7 +389,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .container-main-home .child-container-main-home .main-home-left .main-home-left-top .play .button
 {
-    width: 170px;
+    width: 160px;
     height: 50px;
     border-radius: 15px;
     background-color: var(--main-color);
@@ -396,11 +398,16 @@ input[type="search"]::-webkit-search-cancel-button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.5s all;
+}
+.container-main-home .child-container-main-home .main-home-left .main-home-left-top .play .button:hover
+{
+    background-color: var(--second-color);
 }
 .container-main-home .child-container-main-home .main-home-left .main-home-left-top .play i
 {
     position: absolute;
-    right: 15px;
+    right: 22px;
     top: 15px;
     color: white;
     font-size: 20px;
@@ -447,6 +454,7 @@ input[type="search"]::-webkit-search-cancel-button {
     object-fit:contain;
     display: flex;
     align-items: end;
+    /* border: 1px solid white; */
 }
 
 .container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games .title
@@ -478,6 +486,7 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
     font-size: 0.9em;
     margin-bottom: 20px;
+    
 }
 
 
@@ -492,6 +501,7 @@ input[type="search"]::-webkit-search-cancel-button {
     transition: 0.5s all;
     display: flex;
     align-items: end;
+    border: 1px solid white;
 }
 
 .container-main-home .child-container-main-home .main-home-left .main-home-left-midle .menu-games .third-game
@@ -505,6 +515,7 @@ input[type="search"]::-webkit-search-cancel-button {
     transition: 0.5s all;
     display: flex;
     align-items: end;
+    /* border: 1px solid white; */
 }
 
 .container-main-home .child-container-main-home .main-home-left .main-home-left-end
@@ -605,6 +616,46 @@ input[type="search"]::-webkit-search-cancel-button {
 {
     width: 30%;
     height: 100%;
-    /* background-color: aliceblue; */
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.container-main-home .child-container-main-home .main-home-right .container-home-profile
+{
+    width: 80%;
+    height: 300px;
+    /* background-color: red; */
+    border-radius: 20px;
+    border: 2px solid rgba(137, 137, 137, 0.795);
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-bottom: 35px;
+}
+.container-main-home .child-container-main-home .main-home-right .container-home-profile .title
+{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.container-main-home .child-container-main-home .main-home-right .activity
+{
+    width: 80%;
+    height: 67%;
 }
 
+.container-main-home .child-container-main-home .main-home-right .activity .activity-title
+{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.container-main-home .child-container-main-home .main-home-right .activity .container-activity
+{
+    width: 100%;
+    height: 85%;
+    border: 2px solid rgba(178, 178, 178, 0.761);
+    border-radius: 20px;
+}

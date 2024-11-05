@@ -149,13 +149,17 @@ let third_game = document.querySelector(".third-game");
 first_game.addEventListener('mouseover', () =>{
     first_game.style.width = "30%";
     first_game.style.height = "80%";
+    first_game.style.border = "1px solid white"
     second_game.style.width = "25%";
     second_game.style.height = "65%";
+    second_game.style.border = "0"
 })
 
 first_game.addEventListener("mouseout", () => {
     first_game.style.width = "25%";
     first_game.style.height = "65%";
+    first_game.style.border = "0"
+    second_game.style.border = "1px solid white"
     second_game.style.width = "30%";
     second_game.style.height = "80%";
 })
@@ -163,6 +167,8 @@ first_game.addEventListener("mouseout", () => {
 third_game.addEventListener('mouseover', () =>{
     third_game.style.width = "30%";
     third_game.style.height = "80%";
+    third_game.style.border = "1px solid white"
+    second_game.style.border = "0"
     second_game.style.width = "25%";
     second_game.style.height = "65%";
 })
@@ -170,6 +176,8 @@ third_game.addEventListener('mouseover', () =>{
 third_game.addEventListener("mouseout", () => {
     third_game.style.width = "25%";
     third_game.style.height = "65%";
+    third_game.style.border = "0"
+    second_game.style.border = "1px solid white"
     second_game.style.width = "30%";
     second_game.style.height = "80%";
 })

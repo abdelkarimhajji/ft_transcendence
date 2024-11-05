@@ -343,7 +343,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 95%;
     height : 85vh;
     min-height: 85vh;
-    background-color: #99185d32;
+    background-color: #99185d25;
     border-radius: 20px;
     border: 2px solid rgba(192, 192, 192, 0.33);
     backdrop-filter: blur(10px);
