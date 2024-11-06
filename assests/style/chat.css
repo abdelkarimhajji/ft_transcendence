@@ -8,7 +8,7 @@
 .container-chat {
     width: 100%;
     min-height: 100vh;
-    /* height: auto; */
+    height: auto;
     background-image: url("../imgs/background.jpg");
     backdrop-filter: blur(50px);
     background-position: center;
@@ -334,14 +334,14 @@ input[type="search"]::-webkit-search-cancel-button {
     justify-content: center;
     box-sizing: border-box;
     padding-top: 50px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     /* align-items: center; */
 }
 
 .container-main-chat  .container-child-chat
 {
     width: 95%;
-    height : 85vh;
+    height : 80vh;
     min-height: 85vh;
     background-color: #99185d25;
     border-radius: 20px;
