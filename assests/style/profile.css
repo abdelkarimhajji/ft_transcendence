@@ -341,5 +341,41 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     box-sizing: border-box;
     padding-right: 25px;
+    padding: 22px;
 }
 
+.container-main-home .child-container-main-home .left-side
+{
+    width: 25%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.container-main-home .child-container-main-home .left-side::after
+{
+    content: "";
+    position: absolute;
+    height: 80%;
+    right: 0;
+    top: 10%;
+    border: 1.5px solid rgb(118, 118, 118);
+}
+
+.container-main-home .child-container-main-home .midle-side
+{
+    width: 48%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid rgb(139, 139, 139);
+    margin-left: 25px;
+}
+
+.container-main-home .child-container-main-home .end-side
+{
+    width: 25%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid rgb(139, 139, 139);
+    margin-left: 25px;
+}
