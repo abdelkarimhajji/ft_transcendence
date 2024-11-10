@@ -434,7 +434,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .container-main-home .child-container-main-home .midle-side .midle
 {
     width: 100%;
-    height: 350px;
+    height: 380px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,8 +445,10 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 100%;
     border-radius: 20px;
     border: 2px solid rgb(137, 137, 137);
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* overflow: hidden; */
 }
 .midle-side .midle .container-midle .first-player
 {
@@ -588,6 +590,19 @@ input[type="search"]::-webkit-search-cancel-button {
     border-right: 2px solid rgb(137, 137, 137);
 
 }
+
+.midle-side .midle .container-midle .winner
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 718px;
+    top: 80px;
+    border-radius: 20px;
+    border: 2px solid rgb(137, 137, 137);
+    z-index: 2;
+}
+
 .container-main-home .child-container-main-home .midle-side .bottom
 {
 
